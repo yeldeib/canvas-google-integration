@@ -37,7 +37,7 @@ public class CourseService extends DialogflowApp {
         return courseList;
     }
 
-    @ForIntent(IntentUtil.LIST_COURSES)
+    @ForIntent("list_courses")
     public ActionResponse getCoursesIntent(ActionRequest request){
         logger.info("Executing intent: " + IntentUtil.LIST_COURSES);
         List<Course> courses = this.getCourses();
