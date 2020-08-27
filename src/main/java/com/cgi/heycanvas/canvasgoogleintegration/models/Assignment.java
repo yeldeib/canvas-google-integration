@@ -10,7 +10,10 @@ public class Assignment {
     private Date lock_at;
     private double points_possible;
     private int allowed_attempts;
+    private int course_id;
     private String name;
+    private boolean has_submitted_submissions;
+    private boolean due_date_required;
 
     public Assignment() {
     }
@@ -39,7 +42,19 @@ public class Assignment {
 
     public void setAllowed_attempts(int allowed_attempts) { this.allowed_attempts = allowed_attempts; }
 
+    public int getCourse_id() { return course_id; }
+
+    public void setCourse_id(int course_id) { this.course_id = course_id; }
+
     public String getName() { return name; }
 
     public void setName(String name) { this.name = name; }
+
+    public boolean getHas_submitted_submissions() { return has_submitted_submissions; }
+
+    public void setHas_submitted_submissions(boolean has_submitted_submissions) { this.has_submitted_submissions = has_submitted_submissions; }
+
+    public boolean getDue_date_required() { return  due_date_required; }
+
+    public void setDue_date_required(boolean due_date_required) { this.due_date_required = due_date_required; }
 }
