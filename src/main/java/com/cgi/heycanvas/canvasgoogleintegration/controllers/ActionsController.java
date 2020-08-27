@@ -3,6 +3,7 @@ package com.cgi.heycanvas.canvasgoogleintegration.controllers;
 import com.cgi.heycanvas.canvasgoogleintegration.services.ActionService;
 import com.cgi.heycanvas.canvasgoogleintegration.services.CourseService;
 import com.cgi.heycanvas.canvasgoogleintegration.util.IntentUtil;
+import com.google.actions.api.App;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +30,7 @@ public class ActionsController {
     private ActionService actionService;
 
     @Autowired
-    private CourseService courseService;
+    private App courseService;
 
     @PostMapping
     public ResponseEntity<?> postAction(@RequestBody String body, @RequestHeader Map<String,String> headers) throws IOException {

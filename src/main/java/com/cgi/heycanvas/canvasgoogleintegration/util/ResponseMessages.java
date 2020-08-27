@@ -14,7 +14,7 @@ public class ResponseMessages {
     static{
         courseMessages.add("This semester you're taking: ");
 
-        followUpMessages.add("Would you like to if you have any assignments due for any of your classes?");
+        followUpMessages.add("Would you like to know if you have any assignments due for any of your classes?");
     }
 
     public static String getRandomCourseMessage(){
